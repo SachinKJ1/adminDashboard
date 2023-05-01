@@ -1,0 +1,54 @@
+.table_container {
+  padding: 1rem;
+  background-color: white;
+  color: white;
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px rgb(88, 86, 86), -1px -1px 5px rgb(132, 121, 121);
+  text-align: center;
+  margin: 1rem;
+}
+.Heading_Div {
+  background-color: #5bb25f;
+  padding: 1rem 1rem 0.5rem 1rem;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgb(88, 86, 86), -1px -1px 5px rgb(132, 121, 121);
+  margin-bottom: 1rem;
+}
+.background-black {
+  background-color: #000000;
+}
+.background-white {
+  background-color: #ffff;
+}
+.textColor-black {
+  color: black;
+}
+.textColor-white {
+  color: #ffff;
+}
+@media (max-width: 800px) {
+  .textColor-black,
+  .textColor-white {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 440px) {
+  .Heading_Div {
+    padding: 0.5rem 0.5rem 0.25rem 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .textColor-black,
+  .textColor-white {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .textColor-black,
+  .textColor-white {
+    font-size: 8px;
+  }
+}

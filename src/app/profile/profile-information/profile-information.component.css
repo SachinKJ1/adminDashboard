@@ -1,0 +1,11 @@
+
+.Heading{
+    font-weight: 500;
+}
+.Personal_Info_Heading{
+    font-weight: 700;
+}.Personal_Info_Section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

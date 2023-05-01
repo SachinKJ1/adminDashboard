@@ -1,0 +1,74 @@
+<div class="Settings_Container">
+  <div class="Head_with_close_Btn">
+    <div>
+      <h1 class="Heading">SETTINGS</h1>
+    </div>
+
+    <button class="btn btn-outline-danger" (click)="onCloseSettings()">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+  <div class="Color_Selection_Section">
+    <div class="Sidebar_Btn_Color">
+      <h4>Sidebar Colors</h4>
+      <div class="Sidebar_Colors">
+        <button
+          data-tab="red"
+          class="Sidebar_Color_Btn Sidebar-red"
+          (click)="onSidebar_Color_Btn($event)"
+        >
+          B
+        </button>
+        <button
+          data-tab="green"
+          class="Sidebar_Color_Btn Sidebar-green"
+          (click)="onSidebar_Color_Btn($event)"
+        >
+          B
+        </button>
+        <button
+          data-tab="blue"
+          class="Sidebar_Color_Btn Sidebar-blue"
+          (click)="onSidebar_Color_Btn($event)"
+        >
+          B
+        </button>
+        <button
+          data-tab="yellow"
+          class="Sidebar_Color_Btn Sidebar-yellow"
+          (click)="onSidebar_Color_Btn($event)"
+        >
+          B
+        </button>
+        <button
+          data-tab="orange"
+          class="Sidebar_Color_Btn Sidebar-orange"
+          (click)="onSidebar_Color_Btn($event)"
+        >
+          B
+        </button>
+        <button
+        data-tab="dark"
+        class="Sidebar_Color_Btn Sidebar-black"
+        (click)="onSidebar_Color_Btn($event)"
+      >
+        B
+      </button>
+      </div>
+    </div>
+    <div class="Sidebar_bg_color">
+      <h4>Sidenav Type</h4>
+      <div class="SideNav_Colors">
+        <button data-bg="dark" class="btn btn-dark" (click)="onSideNav_Colors_Click($event)">Dark</button>
+        <button data-bg="light" class="btn btn-light" (click)="onSideNav_Colors_Click($event)">White</button>
+      </div>
+    </div>
+    <div class="Backgroud_Color">
+      <h4>Backgroud Color</h4>
+      <div class="SideNav_Colors">
+        <button data-bg="dark" class="btn btn-dark" (click)="onBackgroudColorChange($event)">Dark</button>
+        <button data-bg="light" class="btn btn-light" (click)="onBackgroudColorChange($event)">White</button>
+      </div>
+    </div>
+  </div>
+</div>

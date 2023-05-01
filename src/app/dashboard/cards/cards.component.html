@@ -1,0 +1,11 @@
+<div class="Card_container">
+  <div>{{ content }}</div
+  ><br />
+  <span class="fs-2">{{ count }}</span>
+  <hr />
+  <span class="growth_rate_default" [ngClass]="{ growthRateIndicator: growthClass() }">{{ growth }}% </span
+  ><span>{{ growthContent }}</span>
+  <div class="absolute_icon" [ngClass]="bg">
+    <mat-icon>{{ icon }}</mat-icon>
+  </div>
+</div>

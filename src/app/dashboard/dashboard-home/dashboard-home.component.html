@@ -1,0 +1,78 @@
+<div class="dashboard_home" [ngClass]="onBgColorChange()">
+  <!-- Cards section -->
+  <div class="Cards_Section mt-4 mb-4">
+    <app-cards
+      bg="black"
+      content="Revenue"
+      count="53k"
+      growth="+55"
+      growthContent="than last week"
+      icon="point_of_sale"
+    ></app-cards>
+    <app-cards
+      bg="red"
+      content="Todays Users"
+      count="2300"
+      growth="+3"
+      growthContent="than last month"
+      icon="person"
+    ></app-cards>
+    <app-cards
+      bg="green"
+      content="New Clients"
+      count="3,500"
+      growth="-2"
+      growthContent="than yesterday"
+      icon="group"
+    ></app-cards>
+    <app-cards
+      bg="blue"
+      content="Sales"
+      count="103k"
+      growth="+5"
+      growthContent="than yesterday"
+      icon="payments"
+    ></app-cards>
+  </div>
+  <!-- Graphs section -->
+  <div class="graph_section">
+    <div class="graph_container">
+      <app-graph1
+        [color]="backGroundColor"
+        [colorText]="textColor"
+      ></app-graph1>
+      <h4 class="fs-3">MARKER SHARES THIS WEEK</h4>
+      <span>Last Campaign Performance</span>
+      <hr />
+      <span class="">🕑 campaign sent 2 days ago</span>
+    </div>
+
+    <div class="graph_container">
+      <app-graph2
+        [color]="backGroundColor"
+        [colorText]="textColor"
+      ></app-graph2>
+      <h4 class="fs-3">DAILY SALES</h4>
+      <span>(15%) increase in total sales</span>
+      <hr />
+      <span class="">🕑 Updated 4 minutes ago</span>
+    </div>
+  </div>
+
+  <!-- table -->
+
+  <div class="graph_section">
+    <div class="graph_container"><app-table></app-table></div>
+    <div class="graph_container">
+      <app-graph3
+        [color]="backGroundColor"
+        [colorText]="textColor"
+      ></app-graph3>
+      <h4 class="fs-3">PROJECTS STAGE</h4>
+      <span>(5%) increase in completed projects</span>
+      <hr />
+      <span class="">🕑 Updated 1 hour ago</span>
+    </div>
+  </div>
+  <div><app-stepper></app-stepper></div>
+</div>

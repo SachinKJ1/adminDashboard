@@ -1,0 +1,13 @@
+
+.Heading{
+    font-weight: 500;
+}
+.Slider_Account_Settings{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}.All_Slider_Settings{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}

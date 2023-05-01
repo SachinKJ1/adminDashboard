@@ -1,0 +1,43 @@
+.Invoices_Container {
+  border-radius: 10px;
+
+  padding: 1rem;
+  box-shadow: 1px 1px 5px 2px rgb(139, 136, 136),
+    -1px -1px 5px rgb(139, 136, 136);
+  background-color: white;
+}
+.Heading_Div {
+  background-color: #e73673;
+  color: white;
+  padding: 0.5rem 0.5rem 0.1rem 0.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 1px 1px 1px 1px rgb(178, 178, 178);
+}
+.Invoices_heading {
+  font-size: 1.5rem;
+}
+.invoices_contents_style {
+  display: flex;
+  /* background-color: green; */
+  justify-content: space-evenly;
+  gap: 2rem;
+  padding: 9px;
+}
+mat-icon {
+  vertical-align: middle;
+}
+.background-black {
+  background-color: #000000;
+  color: white;
+}
+.background-white {
+  background-color: #fafafa;
+  color: black;
+}
+@media (max-width:800px){
+.invoices_contents_style {
+  justify-content: space-between;
+}
+
+}

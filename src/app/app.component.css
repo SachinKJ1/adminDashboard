@@ -1,0 +1,26 @@
+.Settings {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}.Settings_Content{
+    margin-right: 2rem;
+}
+.container {
+  display: flex;
+}
+.Rightside_Section {
+  height: 100vh;
+}
+.Footer_Hide {
+  visibility: hidden;
+}.hide{
+    display: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+ 

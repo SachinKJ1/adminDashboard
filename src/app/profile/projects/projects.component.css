@@ -1,0 +1,11 @@
+
+.Projects_Container{
+    text-align: center;
+}
+.Projects_image{
+    border-radius: 10px;
+    object-fit: contain;
+  }
+  .Content{
+    height: 4rem;
+  }

@@ -1,0 +1,78 @@
+.Accout_Contanier {
+  background-color: white;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 2px 2px 8px grey, -2px -2px 8px grey;
+  overflow-y: auto;
+}
+.background-black {
+  background-color: black;
+  color: white;
+}
+.background-white {
+  background-color: white;
+  color: black;
+}
+.Heading_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Profile_pic_section {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.Profile_pic {
+  transform: scale(0.7);
+  border-radius: 50%;
+  box-shadow: 2px 2px 8px grey, -2px -2px 8px grey;
+}
+.Settings_Container {
+  display: flex;
+  justify-content: space-between;
+}
+.Settings_Item {
+  flex-basis: 33%;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+.Projects_Container {
+  display: flex;
+  justify-content: space-between;
+}
+.Project_item {
+  flex-basis: 24%;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+.Heading {
+  font-weight: 500;
+}
+@media (max-width: 1300px) {
+  .Settings_Container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .Projects_Container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+@media (max-width: 1000px) {
+  .Projects_Container,.Settings_Container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+.Accout_Contanier {
+padding: 1rem;
+}
+}

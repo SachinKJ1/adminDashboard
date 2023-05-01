@@ -1,0 +1,14 @@
+.Container {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+.alerts_container {
+  width: 80%;
+}
+.background-black {
+  background-color: #262629;
+}
+.background-white {
+  background-color: #fafafa;
+}

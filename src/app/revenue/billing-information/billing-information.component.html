@@ -1,0 +1,51 @@
+<div class="Bill_Container" [ngClass]="onBgColorChange()">
+  <div class="Heading_Div">
+    <h4 class="Bill_Heading">Billing Informations</h4>
+  </div>
+
+  <div class="invoices_contents_style" [ngClass]="bgBillColor">
+    <div>
+      <span>John Marston </span><br />
+      <span>Company Name : viking burrito</span><br />
+      <span>Email Address : Oliver@burritto.com</span><br />
+      <span>VAT Number : FRB123456</span>
+    </div>
+    <div>$230</div>
+    <button [ngClass]="bgBillColor"><mat-icon>delete</mat-icon> DELETE</button>
+    <button [ngClass]="bgBillColor"><mat-icon>edit</mat-icon> EDIT</button>
+  </div>
+  <div class="invoices_contents_style" [ngClass]="bgBillColor">
+    <div class="Indivaidual_Bill">
+      <span>Sadie Adler </span><br />
+      <span>Company Name : viking burrito</span><br />
+      <span>Email Address : Oliver@burritto.com</span><br />
+      <span>VAT Number : FRB123456</span>
+    </div>
+    <div>$750</div>
+    <button [ngClass]="bgBillColor"><mat-icon>delete</mat-icon> DELETE</button>
+    <button [ngClass]="bgBillColor"><mat-icon>edit</mat-icon> EDIT</button>
+  </div>
+  <div class="invoices_contents_style" [ngClass]="bgBillColor">
+    <div>
+      <span>Dutch Vander Linde </span><br />
+      <span>Company Name : viking burrito</span><br />
+      <span>Email Address : Oliver@burritto.com</span><br />
+      <span>VAT Number : FRB123456</span>
+    </div>
+    <div>$550</div>
+    <button [ngClass]="bgBillColor"><mat-icon>delete</mat-icon> DELETE</button>
+    <button [ngClass]="bgBillColor"><mat-icon>edit</mat-icon> EDIT</button>
+  </div>
+
+  <div class="invoices_contents_style" [ngClass]="bgBillColor">
+    <div>
+      <span>Charles Smith </span><br />
+      <span>Company Name : viking burrito</span><br />
+      <span>Email Address : Oliver@burritto.com</span><br />
+      <span>VAT Number : FRB123456</span>
+    </div>
+    <div>$100</div>
+    <button [ngClass]="bgBillColor"><mat-icon>delete</mat-icon> DELETE</button>
+    <button [ngClass]="bgBillColor"><mat-icon>edit</mat-icon> EDIT</button>
+  </div>
+</div>

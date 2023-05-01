@@ -1,0 +1,21 @@
+.table1{
+    padding: 1rem;
+    
+}.employee_heading{
+    padding: 1rem;
+    background-color: #5BB25F;
+    border-radius: 10px;
+    color: white;
+}.background-black {
+    background-color: #262629;
+  }
+  .background-white {
+    background-color: #fafafa;
+  }
+
+  @media(max-width:420px){
+    .table1{
+      font-size: 0.7rem;
+      text-align: center;
+    }
+  }

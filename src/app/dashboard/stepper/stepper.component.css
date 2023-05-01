@@ -1,0 +1,45 @@
+.Stepper_Container {
+  padding: 1rem;
+  background-color: white;
+  color: white;
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px rgb(88, 86, 86), -1px -1px 5px rgb(132, 121, 121);
+
+  text-align: center;
+  margin: 1rem;
+}
+.Heading_Div {
+  /* background-color: #5BB25F; */
+  /* padding: 1rem 1rem 0.5rem 1rem; */
+  color: white;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+h3 {
+  background-color: #5bb25f;
+  display: inline-block;
+  padding: 1rem;
+  box-shadow: 2px 2px 5px rgb(88, 86, 86), -1px -1px 5px rgb(132, 121, 121);
+
+  border-radius: 10px;
+}.Stepper_section_container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.background-black {
+  background-color: #000000;
+}
+.background-white {
+  background-color: #fafafa;
+}
+.textColor-black {
+  color: black;
+}
+.textColor-white {
+  color: #ffff;
+}
+::ng-deep .mat-step-header .mat-step-icon-selected {
+  background-color: #e73673;
+}

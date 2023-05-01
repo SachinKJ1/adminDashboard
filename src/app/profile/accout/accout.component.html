@@ -1,0 +1,60 @@
+<div class="Accout_Contanier" [ngClass]="onBgColorChange()" (window:resize)="onResize()">
+  <div class="Heading_section">
+    <div class="Profile_pic_section">
+      <div>
+        <img
+          class="Profile_pic"
+          src="../../../assets/images/profile_Admin.jpg"
+          alt="Profile_pic"
+        />
+      </div>
+      <div>
+        <h4>Arthur Morgan</h4>
+        <span>HR</span>
+      </div>
+    </div>
+    <div>
+      <button [ngClass]="onBgColorChange()" class="btn"><mat-icon>edit</mat-icon></button>
+    </div>
+  </div>
+  <div class="Settings_Container">
+    <app-platform-settings class="Settings_Item"></app-platform-settings>
+    <app-profile-information class="Settings_Item"></app-profile-information>
+    <app-conversations class="Settings_Item"></app-conversations>
+  </div>
+
+  <div>
+    <div><h4 class="Heading">Projects</h4></div>
+    <h5>Architects design houses</h5>
+    <div class="Projects_Container">
+      <app-projects
+        class="Project_item"
+        heading="Project #2"
+        subheading="Modern"
+        content="As Uber works through a huge amount of internal management turmoil."
+        image="../../../assets/images/home-decor-1.jpg"
+      ></app-projects>
+      <app-projects
+        class="Project_item"
+        heading="Project #1"
+        subheading="Scandanavian"
+        content="Music is something that every person has his or her own specific opinion about."
+        image="../../../assets/images/home-decor-2.jpg"
+      ></app-projects>
+      <app-projects
+        class="Project_item"
+        heading="Project #3"
+        subheading="Minimalistic"
+        content="Different people have different taste, and various types of music."
+        image="../../../assets/images/home-decor-3.jpg"
+      ></app-projects>
+      <app-projects
+        class="Project_item"
+        heading="Project #4"
+        subheading="Gothic"
+        content="Why would anyone pick blue over pink? Pink is obviously a better color."
+        image="../../../assets/images/home-decor-1.jpg"
+      ></app-projects>
+    </div>
+  </div>
+</div>

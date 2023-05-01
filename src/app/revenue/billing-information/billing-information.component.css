@@ -1,0 +1,78 @@
+.Bill_Container {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 1rem;
+  box-shadow: 1px 1px 5px 2px rgb(139, 136, 136),
+    -1px -1px 5px rgb(139, 136, 136);
+}
+.Heading_Div {
+  background-color: #e73673;
+  padding: 1rem 1rem 0.5rem 1rem;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgb(88, 86, 86), -1px -1px 5px rgb(132, 121, 121);
+  margin-bottom: 1.4rem;
+}
+.Bill_Heading {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+.invoices_contents_style {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(238, 238, 238);
+  gap: 2rem;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  align-items: center;
+}
+button {
+  border: none;
+}
+mat-icon {
+  vertical-align: middle;
+}
+.Delete_style {
+  color: red;
+}
+.Edit_style {
+  color: rgb(34, 156, 227);
+}
+.background-black {
+  background-color: #000000;
+}
+.background-white {
+  background-color: #fafafa;
+}
+.textColor-black {
+  color: black;
+}
+.textColor-white {
+  color: #ffff;
+}
+.background-bill-black {
+  background-color: #262629;
+  color: #ffff;
+}
+.background-bill-white {
+  background-color: rgb(238, 238, 238);
+  color: black;
+}
+
+@media (max-width: 620px) {
+  .invoices_contents_style {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .invoices_contents_style {
+    font-size: 8px;
+  }.Heading_Div {
+    padding: 0.5rem 0.5rem 0.25rem 0.5rem;
+  
+    }
+}

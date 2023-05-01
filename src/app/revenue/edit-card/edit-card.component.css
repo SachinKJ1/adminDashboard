@@ -1,0 +1,63 @@
+
+
+.Edit_Card_Container{
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 1px 1px 5px 2px rgb(139, 136, 136),
+    -1px -1px 5px rgb(139, 136, 136);
+}.Heading_Div{
+  display: flex;
+  justify-content: center;
+}
+.Edit_Card_heading{
+  background-color: #2882EB;
+  display: inline-block;
+  padding: 0.8rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgb(88, 86, 86), -1px -1px 5px rgb(132, 121, 121);
+
+  color: white;
+
+}
+.card_edit_options_container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card_Edit_options {
+    width: 48%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgb(88, 86, 86), -1px -1px 5px rgb(132, 121, 121);
+
+}
+.Card_icon {
+  width: 25px;
+  height: 12px;
+  vertical-align: middle;
+  display: inline-block;
+}.Edit_Button{
+    border: none;
+    background-color: white;
+}
+.background-black {
+  background-color: #000000;
+  color: white;
+}
+.background-white {
+  background-color: #fafafa;
+  color: black;
+}
+
+@media(max-width:900px){
+.card_edit_options_container{
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}.card_Edit_options{
+  min-width: 15rem;
+}
+}

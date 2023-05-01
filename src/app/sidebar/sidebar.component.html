@@ -1,0 +1,70 @@
+<div class="Sidebar_Container">
+  <div class="Sidebar_Sub_Container" [ngClass]="onSidebarBgColorChange()">
+    <div class="Admin_Info_Section">
+      <div>
+        <img
+          class="Admin_image"
+          src="../../assets/images/profile_Admin.jpg"
+          alt="sdfsdf"
+        />
+      </div>
+      <div class="Admin_Info">
+        <div [ngClass]="text_color">
+          <span>Arthur Morgan</span><br />
+          <span>online</span>
+        </div>
+      </div>
+    </div>
+    <hr style="color: white" />
+    <div class="pages">
+      <a
+        class="pages_links"
+        routerLink="dashboard"
+        [ngClass]="black"
+        [ngClass]="onSidebarBtnColorChange()"
+        ><mat-icon>dashboard</mat-icon>Dashboard</a
+      >
+
+      <a
+        class="pages_links"
+        routerLink="employees"
+        [ngClass]="black"
+        [ngClass]="onSidebarBtnColorChange()"
+        ><mat-icon>group</mat-icon>Employees</a
+      >
+      <a
+        class="pages_links"
+        routerLink="revenue"
+        [ngClass]="black"
+        [ngClass]="onSidebarBtnColorChange()"
+        ><mat-icon>monetization_on</mat-icon>Revenues</a
+      >
+      <a
+        class="pages_links"
+        routerLink="notifications"
+        [ngClass]="black"
+        [ngClass]="onSidebarBtnColorChange()"
+        ><mat-icon>notifications</mat-icon>Notifications</a
+      >
+      <a
+        class="pages_links"
+        routerLink="profile"
+        [ngClass]="black"
+        [ngClass]="onSidebarBtnColorChange()"
+        ><mat-icon>person</mat-icon>Profile</a
+      >
+      <a
+        class="pages_links"
+        (click)="SettingsToggle()"
+        [ngClass]="black"
+        [ngClass]="onSidebarBtnColorChange()"
+        ><mat-icon>settings</mat-icon>Settings</a
+      >
+      
+    </div>
+
+    <div class="Logout_Section">
+      <button class="logout" (click)="onSidebarBtnToggle()" ><mat-icon>close</mat-icon>Close</button>
+    </div>
+  </div>
+</div>

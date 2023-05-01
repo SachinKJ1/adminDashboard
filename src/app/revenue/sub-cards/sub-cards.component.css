@@ -1,0 +1,32 @@
+.Sub_cards_container {
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 1px 1px 5px 2px rgb(139, 136, 136),
+    -1px -1px 5px rgb(139, 136, 136);
+  height: 17rem;
+  border-radius: 25px;
+  background-color: #5BB25F;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+.Heading_sizing {
+  font-size: 1.5rem;
+}
+mat-icon {
+  background-color: white;
+  transform: scale(2);
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  color: #5BB25F;
+}
+@media(max-width:500px){
+.Sub_cards_container {
+height: auto;
+padding-top: 2rem;
+font-size: small;
+}
+}

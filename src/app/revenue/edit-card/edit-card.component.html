@@ -1,0 +1,45 @@
+<div class="Edit_Card_Container mt-3" [ngClass]="onBgColorChange()">
+  <div class="Heading_Div"><h4 class="Edit_Card_heading">Payment Methods</h4></div>
+  <div>
+    <div class="card_edit_options_container ">
+      <div class="card_Edit_options" [ngClass]="onBgColorChange()">
+        <div>
+          <img
+            class="Card_icon"
+            src="../../../assets/images/master_card.png"
+            alt=""
+          />
+          <span>**** **** **** 7852</span>
+        </div>
+        <div>
+          <button
+          class="Edit_Button" [ngClass]="onBgColorChange()"
+          mat-raised-button
+          matTooltip="Edit"
+          aria-label=" Button that displays a tooltip when focused or hovered over"
+        ><mat-icon>edit</mat-icon></button>
+        </div>
+      </div>
+      <div class="card_Edit_options" [ngClass]="onBgColorChange()">
+        <div>
+          <img
+            class="Card_icon"
+            src="../../../assets/images/Major-Cards.png"
+            alt=""
+          />
+          <span>**** **** **** 7852</span>
+        </div>
+        <div>
+          <button
+            class="Edit_Button" [ngClass]="onBgColorChange()"
+            mat-raised-button
+            matTooltip="Edit"
+            aria-label=" Button that displays a tooltip when focused or hovered over"
+          >
+            <mat-icon>edit</mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

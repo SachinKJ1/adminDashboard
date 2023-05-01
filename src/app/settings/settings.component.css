@@ -1,0 +1,65 @@
+.Settings_Container {
+  padding: 2rem;
+  width: 20rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px grey,-2px -2px 8px grey;
+  
+}
+.Head_with_close_Btn{
+  display: flex;
+}
+.Heading{
+  margin-top: 1rem;
+}
+
+.Color_Selection_Section{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.Head_with_close_Btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Sidebar_Colors {
+  display: flex;
+  gap: 1rem;
+}
+.Sidebar_Color_Btn {
+  border-radius: 50%;
+  border: none;
+}
+.Sidebar-red {
+  background-color: #e73673;
+  color: #e73673;
+}
+.Sidebar-green {
+  background-color: #5bb25f;
+  color: #5bb25f;
+}
+.Sidebar-blue {
+  background-color: #3f99ef;
+  color: #3f99ef;
+}
+.Sidebar-yellow {
+  background-color: #ecef3f;
+  color: #ecef3f;
+}
+.Sidebar-orange {
+  background-color: #fc7e2f;
+  color: #fc7e2f;
+}.Sidebar-black{
+  background-color: #262629;
+  color: #262629;
+}
+
+.SideNav_Colors {
+  display: flex;
+  gap: 1rem;
+}
+mat-icon {
+  vertical-align: middle;
+}

@@ -1,0 +1,75 @@
+.Cards_Section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.background-black {
+  background-color: #262629;
+}
+.background-white {
+  background-color: #fafafa;
+}
+.Cards_and_Editcard {
+  flex: 1 1 60%;
+}
+.Only_Cards_settings {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.Credit_Card_settings {
+  flex: 1 1 40%;
+}
+.Card_settings {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+.Sub_Cards {
+  flex: 1 1 10rem;
+}
+.Cards_and_Editcard {
+  width: 70%;
+}
+.Edit_card_settings {
+  margin-top: 2rem;
+}
+.Invoices_settings {
+  flex: 1 1 30%;
+}
+.Billing_And_Transactioins_Section {
+  display: flex;
+  justify-content: space-evenly;
+}
+.Billing_Information {
+  width: 60%;
+}
+.Transactions {
+  width: 38%;
+}
+@media (max-width: 1400px) {
+  .Billing_And_Transactioins_Section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .Billing_Information {
+    width: 100%;
+  }.Transactions {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+
+.Cards_Section {
+  padding: 1rem;
+
+}
+
+}

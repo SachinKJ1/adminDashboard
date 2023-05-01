@@ -1,0 +1,61 @@
+.Your_Container {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 1rem;
+  /* box-shadow: 0 0 6px inset rgb(131, 120, 120); */
+
+  box-shadow: 1px 1px 5px 2px rgb(139, 136, 136),
+    -1px -1px 5px rgb(139, 136, 136);
+}
+.Heading_Div {
+  background-color: #e73673;
+  padding: 1rem 1rem 0.5rem 1rem;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 5px  rgb(88, 86, 86),
+    -1px -1px 5px rgb(132, 121, 121);
+}
+.Your_Heading {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+.invoices_contents_style {
+  display: flex;
+  /* background-color: green; */
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+}
+.Transaction_to {
+  display: flex;
+  align-items: center;
+}
+mat-icon {
+  vertical-align: middle;
+  background-color: #e73673;
+  transform: scale(1.5);
+  border-radius: 50%;
+  color: white;
+  margin-right: 1rem;
+}
+.background-black {
+  background-color: #000000;
+  color: white;
+}
+.background-white {
+  background-color: #fafafa;
+  color: black;
+}
+@media (max-width: 380px) {
+  .invoices_contents_style {
+    font-size: 10px;
+  padding: 0.5rem;
+
+  }
+  .Heading_Div {
+  padding: 0.5rem 0.5rem 0.25rem 0.5rem;
+
+  }
+}

@@ -1,0 +1,70 @@
+<div class="Header_strip" [ngClass]="onBgColorChange()">
+  <mat-toolbar>
+    <button
+    *ngIf="toggleStatus"
+      (click)="SidebarToggle()"
+      mat-icon-button
+      mat-raised-button
+      matTooltip="Close Sidebar"
+      class="example-icon"
+      aria-label="Example icon-button with menu icon Button that displays a tooltip when focused or hovered over"
+    >
+      <mat-icon> keyboard_double_arrow_left </mat-icon>
+    </button>
+    <button
+    *ngIf="!toggleStatus"
+    (click)="SidebarToggle()"
+    mat-icon-button
+    mat-raised-button
+    matTooltip="Open Sidebar"
+    class="example-icon"
+    aria-label="Example icon-button with menu icon Button that displays a tooltip when focused or hovered over"
+  >
+    <mat-icon> keyboard_double_arrow_right </mat-icon>
+  </button>
+    <span class="ms-2 text-light">Admin</span>
+    <span class="example-spacer"></span>
+    <div class="header_Menu_Content">
+      <ul class="header_Menu_Content_list">
+        <li>
+          <a routerLink="profile" class="link_style">
+            <button
+              mat-icon-button
+              mat-raised-button
+              matTooltip="Sign In"
+              class="example-icon favorite-icon"
+              aria-label="Example icon-button with heart icon  Button that displays a tooltip when focused or hovered over"
+            >
+              <mat-icon>person</mat-icon>
+            </button></a
+          >
+        </li>
+        <li>
+          <button
+            (click)="SettingsToggle()"
+            mat-icon-button
+            mat-raised-button
+            matTooltip="Settings"
+            class="example-icon favorite-icon"
+            aria-label="Example icon-button with heart icon Button that displays a tooltip when focused or hovered over"
+          >
+            <mat-icon>settings</mat-icon>
+          </button>
+        </li>
+        <li>
+          <a routerLink="notifications" class="link_style">
+            <button
+              mat-icon-button
+              mat-raised-button
+              matTooltip="Notifications"
+              class="example-icon"
+              aria-label="Example icon-button with share icon Button that displays a tooltip when focused or hovered over"
+            >
+              <mat-icon>notifications</mat-icon>
+            </button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </mat-toolbar>
+</div>

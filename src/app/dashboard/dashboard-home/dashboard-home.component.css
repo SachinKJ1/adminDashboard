@@ -1,0 +1,47 @@
+.dashboard_home {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.background-black {
+  background-color: #262629;
+  color: white;
+}
+.background-white {
+  color: #262629;
+  background-color: #fafafa;
+}
+.Cards_Section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+.graph_section {
+  display: flex;
+  justify-content: space-evenly;
+}
+.graph_container {
+  width: 48%;
+
+  box-sizing: border-box;
+  border-radius: 25px;
+  text-align: center;
+  color: white;
+  background-color: #5bb25f;
+
+  padding-bottom: 0.5rem;
+  box-shadow: 2px 2px 5px rgb(88, 86, 86), -1px -1px 5px rgb(132, 121, 121);
+}
+
+@media (max-width: 1300px) {
+  .graph_section {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }.graph_container{
+    width: 96%;
+  }
+}

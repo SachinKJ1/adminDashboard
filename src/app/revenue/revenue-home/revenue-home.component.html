@@ -1,0 +1,43 @@
+<div class="Cards_Section" [ngClass]="onBgColorChange()">
+  <div class="Cards_and_Editcard">
+    <div class="Only_Cards_settings">
+      <div class="Credit_Card_settings">
+        <app-credit-card></app-credit-card>
+      </div>
+      <div class="Card_settings">
+        <app-sub-cards class="Sub_Cards"
+          icon="home"
+          heading="Salery"
+          contents="Belong Interactive"
+          money="+$2000"
+        ></app-sub-cards>
+      
+        <app-sub-cards class="Sub_Cards"
+          icon="credit_card"
+          heading="Paypal"
+          contents="Freelance Payment"
+          money="$4500.00"
+        ></app-sub-cards>
+      </div>
+    </div>
+    <div class="Edit_card_settings">
+      <app-edit-card></app-edit-card>
+    </div>
+  </div>
+  <div class="Invoices_settings">
+    <app-invoices ></app-invoices>
+  </div>
+</div>
+
+<div class="Billing_And_Transactioins_Section" [ngClass]="onBgColorChange()">
+<!-- Billing section -->
+<div class="Billing_Information">
+  <app-billing-information></app-billing-information>
+</div>
+
+<!-- your invoices -->
+<div class="Transactions">
+  <app-your-transactions></app-your-transactions>
+</div>
+</div>
+

@@ -1,0 +1,55 @@
+<div class="table_container" [ngClass]="onBgColorChanges()">
+  <div class="Heading_Div"><h3 class="fs-2 mt-2">PENDING PROJECTS</h3></div>
+  <table
+    mat-table
+    [dataSource]="dataSource"
+    class="mat-elevation-z8"
+    [ngClass]="onBgColorChanges()"
+  >
+    <!--- Note that these columns can be defined in any order.
+              The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="companies">
+      <th [ngClass]="onTextColorChanges()" mat-header-cell *matHeaderCellDef>
+        Companies
+      </th>
+      <td [ngClass]="onTextColorChanges()" mat-cell *matCellDef="let element">
+        {{ element.companies }}
+      </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th [ngClass]="onTextColorChanges()" mat-header-cell *matHeaderCellDef>
+        Members
+      </th>
+      <td [ngClass]="onTextColorChanges()" mat-cell *matCellDef="let element">
+        {{ element.name }}
+      </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="weight">
+      <th [ngClass]="onTextColorChanges()" mat-header-cell *matHeaderCellDef>
+        Budget
+      </th>
+      <td [ngClass]="onTextColorChanges()" mat-cell *matCellDef="let element">
+        {{ element.weight }}
+      </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="symbol">
+      <th [ngClass]="onTextColorChanges()" mat-header-cell *matHeaderCellDef>
+        Completion
+      </th>
+      <td [ngClass]="onTextColorChanges()" mat-cell *matCellDef="let element">
+        {{ element.symbol }}
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+</div>

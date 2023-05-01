@@ -1,0 +1,21 @@
+.Conversation_container{
+}
+.Heading{
+    font-weight: 500;
+}
+.Messages_individual{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: yellow; */
+}.Image_Name{
+    display: flex;
+    gap: 0.5rem;
+}.Profile_pic_Others{
+    border-radius: 10px;
+    width: 50px;
+}.Messages_Section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
